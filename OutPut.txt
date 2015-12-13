@@ -1,0 +1,4 @@
+The Given data has shown that between the years 1900 and 2000
+The Year with the greatest increase since 1900 was 1999 with 54825
+The Year with the least increase since 1900 was 1900 with 1000
+

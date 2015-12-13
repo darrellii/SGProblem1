@@ -1,4 +1,5 @@
 package com.dj.sgproblem1;
+import java.io.PrintWriter;
 import java.util.List;
 
 import com.dj.sgproblem1.algorithm.PopulationStatCalculator;
@@ -43,6 +44,13 @@ public class ProblemRunner {
 		PopulationStatCalculator calculatorNew = new PopulationStatCalculator(peopleNew,START_YEAR,END_YEAR);
 		StatisticResults resultsNew = calculatorNew.calculate();
 		System.out.println(resultsNew);
+		
+		PrintWriter writer;
+		try {
+			writer = new PrintWriter("OutPut.txt", "UTF-8");
+			writer.println(resultsNew.toString());
+			writer.close();
+		} catch (Exception e) {}
 	}
 
 }
